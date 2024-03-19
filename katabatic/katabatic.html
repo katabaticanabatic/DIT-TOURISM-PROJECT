@@ -1,11 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Wild Heart Uganda Safaris</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add your custom CSS here */
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: blue;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      opacity: 0;
+      animation: zoomOut 1.5s forwards;
+      transition: 5s;
+    }
+    @keyframes zoomOut {
+      0% {
+        opacity: 0;
+        transform: scale(2); /* Initial scale */
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1); /* Final scale */
+      }
+    }
+    .text-overlay:hover{
+        color: red;
+    }
+    
+
+    
+  </style>
 </head>
 <body>
-    my code comes here
+  <header>
+    <h1>About Us - Discover Uganda</h1>
+  </header>
+  
+  <section class="hero">
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="/katabatic/image1.jpg" alt="Uganda Tourism Image 1">
+        <div class="text-overlay">ABOUT US</div>
+      </div>
+      <div class="slide fade">
+        <img src="/katabatic/hippo.jpg" alt="Uganda Tourism Image 2">
+        <div class="text-overlay">ABOUT US</div>
+      </div>
+      <div class="slide fade">
+        <img src="/katabatic/lion.jpg" alt="Uganda Tourism Image 3">
+        <div class="text-overlay">ABOUT US</div>
+      </div>
+      <div class="slide fade">
+        <img src="/katabatic/national park1.jpg" alt="Uganda Tourism Image 3">
+        <div class="text-overlay">ABOUT US</div>
+      </div>
+      <div class="slide fade">
+        <img src="/katabatic/national park2.jpg" alt="Uganda Tourism Image 3">
+        <div class="text-overlay">ABOUT US</div>
+      </div>
+      <div class="slide fade">
+        <img src="/katabatic/national park3.jpg" alt="Uganda Tourism Image 3">
+        <div class="text-overlay">ABOUT US</div>
+      </div>
+      <div class="slide fade">
+        <img src="/katabatic/source of nile.jpg" alt="Uganda Tourism Image 3">
+        <div class="text-overlay">ABOUT US</div>
+      </div>
+      <div class="slide fade">
+       
+      <!-- Add more images as needed -->
+    </div>
+  </section>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      const slides = document.getElementsByClassName("slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+    function toggleAccordion(id) {
+  var content = document.getElementById(id);
+  if (content.style.display === "none") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+}
+    
+  </script>
+  <section class="section">
+    <div class="header">Welcome to Wild Heart Uganda Safaris</div>
+    <button class="accordion">Who Are We</button>
+    <div class="panel">
+      <p>We are a passionate team dedicated to providing unforgettable safari experiences in Uganda. Our expertise and love for wildlife allow us to create customized tours that cater to your preferences and ensure an adventure of a lifetime.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    
+    <button class="accordion">Why Choose Us</button>
+    <div class="panel">
+      <p>There are many reasons to choose Wild Heart Uganda Safaris for your next adventure:</p>
+      <ul>
+        <li>Experienced guides with extensive knowledge of Ugandan wildlife</li>
+        <li>Customized tours tailored to your interests and preferences</li>
+        <li>Commitment to sustainable tourism and conservation efforts</li>
+        <li>Excellent customer service and support throughout your journey</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <button class="accordion">Our Roots/Heritage</button>
+    <div class="panel">
+      <p>Our company's roots are deeply connected to the rich heritage and culture of Uganda. We strive to promote local communities and traditions while preserving the natural beauty and biodiversity of this incredible country.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="header">Some of our key aspects of Uganda's tourism</div>
+    <div class="image-container">
+        <div class="image" id="image1">
+            <img src="karamong.jpg" alt="culture">
+            <div class="content content1">
+                <!-- Content for image 1 -->
+                <h2>Culture</h2>
+                <p>Uganda's culture is a rich tapestry woven from the diverse traditions of its numerous ethnic groups, each contributing unique customs, languages, and rituals to the country's vibrant heritage. With over 56 recognized ethnic groups, including the Baganda, Ateso, Banyankole, and Acholi,karamong, Uganda boasts a colorful mosaic of cultural practices and beliefs</p>
+            </div>
+        </div>
+        <div class="image" id="image2">
+            <img src="kampala.jpg" alt="cities">
+            <div class="content content2">
+                <!-- Content for image 2 -->
+                <h2>Capital City</h2>
+                <p>Uganda is home to several vibrant cities, each offering its own unique blend of culture, history, and urban life. Kampala, the capital and largest city, pulsates with energy, bustling markets, and a lively nightlife scene. It serves as the economic, political, and cultural hub of the country, with a mix of modern skyscrapers and historical landmarks like the Kasubi Tombs and the Uganda Museum</p>
+            </div>
+        </div>
+        <div class="image" id="image3">
+            <img src="rwenzori.jpg" alt="mountain">
+            <div class="content content3">
+                <!-- Content for image 3 -->
+                <h2>Mountain</h2>
+                <p>One of Uganda's most iconic natural features is the Rwenzori Mountains, often referred to as the "Mountains of the Moon." Located in the western part of the country along the border with the Democratic Republic of the Congo, the Rwenzoris are one of Africa's highest mountain ranges. The highest peak, Margherita Peak, stands at an impressive 5,109 meters (16,763 feet) above sea level, making it the third-highest mountain in Africa.</p>
+            </div>
+        </div>
+        <div class="image" id="image8">
+            <img src="lion.jpg" alt="king">
+            <div class="content content4">
+                <!-- Content for image 8 -->
+                <h2>King</h2>
+                <p>Lions, Panthera leo, are integral components of the vibrant ecosystems found within Uganda's national parks, such as Queen Elizabeth National Park and Murchison Falls National Park. Within these protected areas, lions thrive in the diverse habitats ranging from savannas to woodlands, forming social prides that navigate the lush landscapes.Uganda's national parks strive to ensure the continued existence of lions, enriching the biodiversity and cultural heritage of the region.</p>
+            </div>
+        </div>
+        <div class="image" id="image8">
+          <img src="wildlife and safaris.jpg" alt="king">
+          <div class="content content4">
+              <!-- Content for image 8 -->
+              <h2>King</h2>
+              <p>Lions, Panthera leo, are integral components of the vibrant ecosystems found within Uganda's national parks, such as Queen Elizabeth National Park and Murchison Falls National Park. Within these protected areas, lions thrive in the diverse habitats ranging from savannas to woodlands, forming social prides that navigate the lush landscapes.Uganda's national parks strive to ensure the continued existence of lions, enriching the biodiversity and cultural heritage of the region.</p>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="boys">
+    <h1>OUR GOALS</h1>
+  </section>
+
+
+<section class="category">
+  
+  <h2>Tourism</h2>
+  <div class="goal-container">
+    <div class="goal">
+      <img src="tourism logo.jpeg" alt="Tourism Logo">
+      <p>Wild Heart Uganda Safaris tourism seeks to create a positive and transformative<br> Travel experience for both travellers and local communities by promoting, unity, empowerment, cultural exchange and sustainability.</p>
+    </div>
+  </div>
+
+  <h2>Culture and Natural Wonders</h2>
+  <div class="goal-container">
+    <div class="goal">
+      <img src="culture logo.jpeg" alt="Culture and Natural Wonders Logo">
+      <p>We further aim to foster a deeper appreciation and understanding of Africa's diverse cultures and natural wonders.</p>
+    </div>
+  </div>
+
+  <h2>Traditional Activities</h2>
+  <div class="goal-container">
+    <div class="goal">
+      <img src="trandition logo.jpeg" alt="Traditional Activities Logo">
+      <p>Umoja tourism embraces celebrating the rich cultural heritage of diverse African communities by immersing ourselves together with our travellers in the <br>local cultures, interacting with community members while participating in various traditional activities like music, dance, crafts and food with a core aim <br>of promoting mutual understanding, appreciation and respect between travellers and locals in every destination.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="header">Our Mission</div>
+  <div class="mission-container">
+    <div class="mission-text">
+      
+      <p>
+        Wild Heart uganda Safaris's mission provides world-class hospitality services to its customers. <br>The Wild Heart uganda Safaris aims are to create memorable travel experiences by offering exceptional customer service, personalized itineraries, and top-notch accommodations. <br>Wild Heart uganda Safaris strives to be trusted partner for individuals, groups, and companies seeking to explore new destinations, whether it’s for leisure, business, or special events. <br>The Wild Heart uganda Safaris dedicated to ensuring that each customer receives the highest level of satisfaction, attention to detail, and professionalism throughout their journey. <br>Wild Heart uganda Safaris aims to exceed customer expectations and establish long-lasting relationships built on trust and quality service.
+      </p>
+    </div>
+    <div class="mission-image">
+      <img src="mission.webp" alt="Mission Image">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="header">Our Objectives</div>
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-button" onclick="toggleAccordion('objective1')"><span class="plus-sign">+</span> Tours and Travel Business</button>
+      <div class="accordion-content" id="objective1">
+        <p>Carrying on the business of tours and travel services.</p>
+        <ul>
+          <li>Car hire services and tourism sites</li>
+          <li>Tourism promotion</li>
+          <li>Camps and promotion</li>
+          <li>Visa application</li>
+          <li>Processing renewals and management</li>
+          <li>General transport and logistic</li>
+          <li>Game park services</li>
+          <li>Game park rides</li>
+          <li>Hotels reservation and travels agents</li>
+          <li>Hire trucks and transport tourists and families to various locations</li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-button" onclick="toggleAccordion('objective2')"><span class="plus-sign">+</span> Airline Reservation Business</button>
+      <div class="accordion-content" id="objective2">
+        <p>To carry on the business of Airline reservation and air ticketing.</p>
+        <ul>
+          <li>Charter flight travel contractors</li>
+          <li>Arrange hotel and accommodation booking and travellers cheque and credit card facilities</li>
+          <li>Visa handling</li>
+          <li>Travel insurance</li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-button" onclick="toggleAccordion('objective3')"><span class="plus-sign">+</span> Opening and Operating Tour Sites</button>
+      <div class="accordion-content" id="objective3">
+        <p>Opening and operating tour sites, picnic centers and or sceneries, hotels camping sites, and to carry any such activities including but not limited to, restaurant owners, indoor and outside catering services, managing leisure parks managing hotels, rental apartments, lodges, guest houses, rest rooms for tourists, recreational centers, pubs, restaurants and to rear birds, animals and to do any such activities intended to attract tourists.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-button" onclick="toggleAccordion('objective4')"><span class="plus-sign">+</span> Consultants in International Tours</button>
+      <div class="accordion-content" id="objective4">
+        <p>Engaging and carrying on the business as consultants in international tours and travel to the general public. To carry on the task of providing skills, training and technical knowhow to those engaged in tourism sector and to carry out broad research on how to promote the growth and development of tourism industry in Uganda and elsewhere in the world as may seem expedient to the company. To carry on the business of tours and safari outfitters, safari organizers and trave</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="testimonials">
+  <div class="testimonial-box">
+    <img src="person1.jpg" alt="Person 1" width="80" height="80">
+    <div class="testimonial-content">
+      <p class="rating">★★★★★</p>
+      <p>Amazing tour experience! The guides were knowledgeable and the itinerary was well-planned. Would highly recommend!</p>
+      <p>- ***%KaTaBaTiC</p>
+    </div>
+  </div>
+
+  <div class="testimonial-box">
+    <img src="person2.jpg" alt="Person 2" width="80" height="80">
+    <div class="testimonial-content">
+      <p class="rating">★★★★★</p>
+      <p>Absolutely fantastic! From start to finish, everything was top-notch. I can't wait to book another tour with this company.</p>
+      <p>- YiGa PauL@</p>
+    </div>
+  </div>
+
+  <div class="testimonial-box">
+    <img src="person3.jpg" alt="Person 3" width="80" height="80">
+    <div class="testimonial-content">
+      <p class="rating">★★★★★</p>
+      <p>Exceeded all expectations! The tour was both educational and enjoyable. A memorable experience for sure!</p>
+      <p>- @OSUKU NATHAN</p>
+    </div>
+  </div>
+
+  
+
+  
+  
 </body>
 </html>
