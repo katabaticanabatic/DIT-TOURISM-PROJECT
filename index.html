@@ -4,8 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <Style>
+        .header{
+            color: white;
+            font-size: 35px;
+            background: blue;
+        }
+        .header:hover{
+            color: black;
+        }
+        .head{
+            color: aliceblue;
+            background: blue;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-size: 50px;
+        }
+        .head:hover{
+            color: black;
+        }
+        .boys{
+            color: aliceblue;
+            background: blue;
+            border-radius: 16px;
+            
+        }
+        .boys h1{
+            color: white;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        .boys h1:hover{
+            color: black;
+        }
+        .ima{
+            width: 350px;
+            height: auto;
+            display: flex;
+            margin-right: 10px;
+        }
+        .eli{
+            width: 350px;
+            height: auto;
+            display: flex;
+            margin-right: 10px;
+
+        }
+        .but{
+            background: aqua;
+            color: red;
+            font-weight: 300;
+            border-radius: 10px;
+        }
+        .but:hover{
+            color: aliceblue;
+        }
+
+        .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: blue;
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      opacity: 0;
+      animation: zoomOut 1.5s forwards;
+      transition: 5s;
+    }
+    @keyframes zoomOut {
+      0% {
+        opacity: 0;
+        transform: scale(2); /* Initial scale */
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1); /* Final scale */
+      }
+    }
+    .text-overlay:hover{
+        color: red;
+    }
+    
+    </Style>
 </head>
 <body>
-    we move together
+    <header>
+        <h1 class="head">TOUR PACKAGES</h1>
+      </header>
+      
+      <section class="hero">
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="/images/Activities-in-Rwenzori-National-Park.jpg" alt="" >
+            <div class="text-overlay">TOUR WITH US</div>
+          </div>
+          <div class="slide fade">
+            <img src="/images/download (2).jpg" alt="Uganda Tourism Image 2">
+            <div class="text-overlay">TOUR WITH US</div>
+          </div>
+          <div class="slide fade">
+            <img src="/images/images.jpg" alt="Uganda Tourism Image 3">
+            <div class="text-overlay">TOUR WITH US</div>
+          </div>
+          <div class="slide fade">
+            <img src="/images/kid.jpg" alt="Uganda Tourism Image 3">
+            <div class="text-overlay">TOUR WITH US/div>
+          </div>
+          <div class="slide fade">
+            <img src="/images/kidd.jpgTOUR WITH USganda Tourism Image 3">
+            <div class="text-overlay">TOUR WITH US</div>
+          </div>
+          <div class="slide fade">
+            <img src="/images/murc.jpgTOUR WITH USganda Tourism Image 3">
+            <div class="text-overlay">TOUR WITH US</div>
+          </div>
+          <div class="slide fade">
+            <img src="/images/murchi.jTOUR WITH US Tourism Image 3">
+            <div class="text-overlay">TOUR WITH US</div>
+          </div>
+          <div class="slide fade">
+           
+          <!-- Add more images as needed -->
+        </div>
+      </section>
+    
+      <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+          let i;
+          const slides = document.getElementsByClassName("slide");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          slides[slideIndex - 1].style.display = "block";
+          setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+        function toggleAccordion(id) {
+      var content = document.getElementById(id);
+      if (content.style.display === "none") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+        
+      </script>
+      <section class="section">
+        <div class="header">RWENZORI</div>
+        <button class="but">About Rwenzori</button>
+        <div class="panel">
+          <p>The Rwenzori Mountains, also known as the “Mountains of the Moon,” are a mountain range in East Africa, located on the border between Uganda and the Democratic Republic of Congo (DRC). </p>
+          <p>They are known for their exceptional beauty, unique vegetation, and challenging climbing conditions.</p>
+        </div>
+      </section>
+      <section>
+        <div class="header">Rwenzori Attractions</div>
+    <div class="image-container">
+        <div class="image" id="image1">
+            <img src="/images/Activities-in-Rwenzori-National-Park.jpg" alt="culture"class= "ima">
+            <div class="content content1">
+                <!-- Content for image 1 -->
+               
+            </div>
+        </div>
+        <div class="image" id="image2">
+            <img src="/katabatic/Rwenzori1.jpg" alt="cities"class="ima">
+            <div class="content content2">
+                <!-- Content for image 2 -->
+            </div>
+        </div>
+        <div class="image" id="image3">
+            <img src="/katabatic/rwenzori2.jpg" alt="mountain"class="ima">
+            <div class="content content3">
+            </div>
+        </div>
+
+      </section>
+      <section class="boys">
+        <h1>DIRECTION</h1>
+
+        <h2>Find Us</h2>
+        <div class="goal-container">
+           <div class="goal">
+                
+                <p>Rwenzori Mountains National Park is a Ugandan national park and UNESCO World Heritage Site located in the Rwenzori Mountains. Almost 1,000 km² in size, the park has Africa's third highest mountain peak and many waterfalls, lakes, and glaciers. The park is known for its beautiful plant life</p>
+                <p>Address: Bundibugyo</p>
+                <p>Area: 998 km²</p>
+                <p>Established: 1991</p>
+                <p>Hours: 
+                    Open ⋅ Closes 6 pm</p>
+                 <p>UNESCO Site Id: 684</p>   
+           </div>
+        </div>
+
+      </section>
+      <section class="section2">
+        <div class="header">QUEEN ELIZABETH NATIONAL PARK</div>
+        <button class="but">About Queen Elizabeth</button>
+        <div class="panel">
+          <p>The national park is located in western Uganda, spanning the districts of Kasese, Kamwenge, Bushenyi and Rukungiri.  </p>
+          <p>Its location is approximately 376 kilometres (234 mi), by road, southwest of Kampala, Uganda's capital and largest city.</p>
+        </div>
+      </section>
+      <section>
+        <div class="header">Elizabeth Attractions</div>
+    <div class="image-container">
+        <div class="image" id="image1">
+            <img src="/images/queen.jpg" alt="culture"class="eli">
+            <div class="content content1">
+                <!-- Content for image 1 -->
+               
+            </div>
+        </div>
+        <div class="image" id="image2">
+            <img src="/images/queen1.jpg" alt="cities"class="eli">
+            <div class="content content2">
+                <!-- Content for image 2 -->
+            </div>
+        </div>
+        <div class="image" id="image3">
+            <img src="/images/quuen2.jpg" alt="mountain"class="eli">
+            <div class="content content3">
+            </div>
+        </div>
+    </section>
+    <section class="boys">
+      <h1>DIRECTION</h1>
+      <h2>Find Us</h2>
+        <div class="goal-container">
+           <div class="goal">
+                
+                <p>Location. Queen Elizabeth National Park (QENP) is in the Western Region of Uganda, spanning the districts of Kasese, Kamwenge, Rubirizi, and Rukungiri. The park is approximately 400 kilometres (250 mi) by road south-west of Kampala, Uganda's capital and largest city</p>
+                
+                <p>Address: Kasese, Kamwenge, Bushenyi and Rukungiri</p>
+                <p>Area: 1,978 km²</p>
+                <p>Coordinates: 00°08′14″S 30°02′28″E﻿ / ﻿0.13722°S</p>
+                <p>Open ⋅ Closes 7 pm
+                </p>
+                 <p>Established: 1952</p>   
+           </div>
+        </div>
+    </section>
+    
+    
+      
+      </div>
+    
 </body>
 </html>
