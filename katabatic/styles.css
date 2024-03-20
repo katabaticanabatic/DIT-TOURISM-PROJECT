@@ -443,3 +443,30 @@ body {
   font-size: 16px;
   color: blue;
 }
+
+
+
+.end-section {
+  width: 100%;
+  background-color: burlywood;
+  color: green;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.company-info img {
+  max-width: 100px;
+}
+
+.quick-links, .legal-info, .contacts {
+  text-align: left;
+}
+.quick-links ul:hover{
+  color: white;
+}
+
+.contacts ul li:hover{
+  color:blue;
+}
+
