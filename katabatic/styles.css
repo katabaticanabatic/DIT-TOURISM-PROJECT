@@ -64,10 +64,11 @@ body {
   }
   
   .accordion {
-    background-color: rgb(192, 177, 177);
-    color: red;
-    font-size: 44px;
+    background-color: rgb(85, 73, 192);
+    color: white;
+    font-size: 20px;
     font-weight: 500;
+    justify-items: center;
     cursor: pointer;
     padding: 18px;
     width: 100%;
