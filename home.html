@@ -6,19 +6,45 @@
     <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title> Wild Heart Uganda Safaris</title>
-    <link rel="stylesheet" href="./styll.css">
+    <link rel="stylesheet" href="/home.css">
+    <style>
+      .navbar {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    background-color: #f8f9fa; /* Background color */
+    padding: 10px 20px; /* Adjust padding for spacing */
+}
+
+.navbar a {
+    color: blue; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Adjust padding for spacing */
+    margin-left: 10px; /* Add space between links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Change text color on hover */
+}
+
+.navbar a.active {
+    font-weight: bold; /* Highlight active link */
+    color:blue; /* Change text color for active link */
+}
+    </style>
 </head>
 <body>
     <header class="header">
       <a href="#home" class="logo"> <img src="./images/LOGO.png" alt=""></a>
    
       <nav class="navbar">
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT</a>
+        <a href="home.html">HOME</a>
+        <a href="/katabatic/katabatic.html">ABOUT</a>
         <a href="#services">SERVICES</a>
-        <a href="#tour">TOUR PACKAGES</a>
-        <a href="#contact">CONTACT</a>
+        <a href="index.html">TOUR PACKAGES</a>
+        <a href="/katabatic/noel/noel.html">CONTACT</a>
      </nav>
+
      <i class="fa-solid fa-bars"></i>
     </header>
 
@@ -29,7 +55,7 @@
           <div class="swiper-slide box">
             
             <div class="content">
-              <img class="image" src="./images/f2.jpg" alt="image1">
+              <img class="image" src="/images home/f2.jpg" alt="image1">
                 <div class="text"><h3>Discover the HaertBeat of Africa with us.</h3>
                   <h1>Welcome To Wild heart Safaris</h1>
                   <h5>"At Wild Heart Uganda Safaris, we're passionate about the transformative power of travel. <br> 
@@ -42,7 +68,7 @@
           <div class="swiper-slide box">
             
             <div class="content">
-              <img class="image" src="./images/3.jpg" alt="image1">
+              <img class="image" src="./images home/3.jpg" alt="image1">
                 <div class="text"><h3>Discover the HaertBeat of Africa with us.</h3>
                   <h1>Welcome To Wild heart Safaris</h1>
                   <h5>"At Wild Heart Uganda Safaris, we're passionate about the transformative power of travel. <br> 
@@ -70,19 +96,19 @@
        </div>
        <div class="container">
          <div class="slid-fade">
-            <img src="./images/lion 2.jpg" alt="uganda torism 1">
+            <img src="/images home/lion 2.jpg" alt="uganda torism 1">
             <div class="text-overlay">Queen Elizabeth NP</div>
         </div>
         <div class="slid-fade2">
-            <img src="./images/4.jpg" alt="uganda torism 2">
+            <img src="./images home/4.jpg" alt="uganda torism 2">
             <div class="text-overlay1">KIDEPO VALLEY NATIONAL PARK</div>
         </div>
         <div class="slid-faded">
-            <img src="./images/marc.jpg" alt="uganda torism 3">
+            <img src="./images home/marc.jpg" alt="uganda torism 3">
             <div class="text-overlay2">MURCHITION FALLS</div>
         </div>
         <div class="slid-fades">
-            <img src="./images/karamo.jpg" alt="uganda torism 4">
+            <img src="./images home/karamo.jpg" alt="uganda torism 4">
             <div class="text-overlay3">KARAMOJONG SETTLEMENTS </div>
         </div>
 
@@ -95,7 +121,7 @@
         <div class="wholetank">
             <div class="wrapper">
               <div class="logo2">
-                <img src="./images/LOGO.png" alt="">
+                <img src="./images home/LOGO.png" alt="">
               </div>
               <div class="head">
                 <h1>Tour packages For You </h1>
@@ -141,34 +167,27 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="park-info">
-              <img src="./images/murchision.jpg" alt="Park 1">
+              <img src="./images home/murchision.jpg" alt="Park 1">
               <h2>Murchison Falls National Park</h2>
               <p>Murchison Falls National Park is known for its diverse wildlife including elephants, giraffes, lions, and hippos. The park is also home to the breathtaking Murchison Falls where the Nile River forces its way through a narrow gorge.</p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="park-info">
-              <img src="./images/far.jpg" alt="Park 2">
+              <img src="./images home/far.jpg" alt="Park 2">
               <h2>Bwindi Impenetrable National Park</h2>
               <p>Bwindi Impenetrable National Park is famous for its population of endangered mountain gorillas. It is also a UNESCO World Heritage Site and offers stunning biodiversity with numerous species of birds, primates, and plants.</p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="park-info">
-              <img src="./images/lion 2.jpg" alt="Park 3">
+              <img src="./images home/lion 2.jpg" alt="Park 3">
               <h2>Queen Elizabeth National Park</h2>
               <p>Queen Elizabeth National Park is renowned for its diverse ecosystems, which include savanna, wetlands, and forests. It is home to various wildlife, including elephants, lions, and chimpanzees.</p>
             </div>
           </div>
           <!-- Add more swiper-slide elements for additional parks -->
-          <div class="swiper-slide">
-            <div class="park-info">
-              <img src="park4.jpg" alt="Park 4">
-              <h2>  Queen Elizabeth National Park</h2>
-              <p>Kidepo Valley National Park is located in the rugged, semi-arid valleys of northern Uganda. It is known for its spectacular scenery and abundant wildlife, including lions, elephants, and giraffes.</p>
-            </div>
           
-        </div>
         
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div> 
