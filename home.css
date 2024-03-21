@@ -1,0 +1,388 @@
+*{
+    margin: 0;  padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+    font-family: 'fira sans',  sans-serif;
+
+}
+
+:root{
+    --primary:#22bb49;
+    --dark:#221d1d;
+    --pure:#e7dada;
+    --ternary:#898989;
+   
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top:0.5rem;
+    font-size: 66%;
+}
+
+header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3%;
+    background: #555a54;
+    z-index: 1001;
+    
+
+}
+
+header img{
+    width: 170px;
+    height: 170px;
+    padding-bottom: 20px;
+}
+    
+.header {
+    height: 80px;
+  }
+
+header .navbar a{
+    margin-left:0 0.8rem;
+    font-size: 1.7rem;
+    color: var(--pure);
+    padding: 0.4rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+}
+header .fa-bars{
+    font-size: 2.2rem;
+    color: var(--primary);
+    cursor: pointer;
+    display: none;
+}
+
+.home .home-slid .box{
+    position: relative;
+}
+
+.home .home-slide .box::before{
+    content: "";
+    background-color: rgb(14, 12, 12);
+    position: absolute;
+    top: 0; left:0;
+    bottom: 0; right: 0;
+
+}
+
+.content h3{
+    font-size: 1rem;
+    text-align: center;
+
+}
+.content h5{
+    font-size: 1rem;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+}
+
+.content{
+    position: relative;
+    display: block;
+}
+
+.content .btn {
+    font-size: 2rem;
+    padding: 0.8rem 3.8rem;
+    border: 0.1rem solid --pure;
+    outline: o;
+   
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30%px;
+    padding-top:20px;
+    
+
+}
+.content .btn:hover{
+   color: #22bb49;
+   background: none;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #f7efef;
+    
+}
+
+.content h1{
+   font-size: 3rem;
+   margin: 1rem 0;
+}
+
+.content img{
+    width: 1000px;
+    height: 400px;
+}
+
+
+
+.heading h2{
+    background: #555a54;
+    color: rgb(48, 43, 43);
+    
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+   
+    
+}
+
+.slid-fade img{
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.slid-fade2 img{
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: absolute;
+    
+    margin-left: 30%;
+   
+}
+
+.slid-faded img{
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: absolute;
+    margin-left: 60%;
+}
+
+.slid-fades img{
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: absolute;
+    margin-left: 90%;
+}
+
+.heading h2{
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+}
+
+
+.text-overlay{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 5%;
+    color:var(--primary);
+    font-size: 20px;
+    
+
+}
+
+.text-overlay1{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 32%;
+    color:rgb(238, 18, 18);
+    font-size: 15px;
+    justify-content: space-between;
+
+}
+.text-overlay2{
+    position: absolute;
+    margin-top: 15%;
+    margin-left:68%;
+    color:red;
+    font-size: 15px;
+    justify-content: space-between;
+
+}
+.text-overlay3{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 90%;
+    color:red;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+/* programs */
+.logo2 img{
+    margin-top: 25%;
+    width: 250px;
+    height: 150px;
+    margin-left: 34%;
+  
+}
+
+.head h1{
+    border-bottom: 2px solid green;
+    font-size: 2rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+.Gorilla p{
+    margin-left: 20%;
+    margin-bottom: 2%;
+    background: rgb(219, 206, 206);
+    border-radius: 5px;
+    width: 40%;
+    color:var(--primary);
+    text-align: center;
+}
+
+.expedition p{
+    margin-left: 20%;
+    margin-bottom: 2%;
+    background: rgb(219, 206, 206);
+    border-radius: 5px;
+    width: 40%;
+    color:var(--primary);
+    text-align: center;
+}
+
+.birds{
+    margin-left: 20%;
+    margin-bottom: 2%;
+    background:rgb(219, 206, 206);
+    border-radius: 5px;
+    width: 40%;
+    color: var(--primary);
+    text-align: center;
+}
+
+.culture{
+    margin-left: 20%;
+    margin-bottom: 2%;
+    background: rgb(219, 206, 206);
+    border-radius: 5px;
+    width: 40%;
+    color:var(--primary);
+    text-align: center;
+}
+
+
+.all{
+    width: 300px;
+    height: 500px;
+    
+}
+
+
+.national-parks-slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Style for each park information container */
+  .park-info {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style for park images */
+  .park-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Center align text within each swiper-slide */
+  .swiper-slide {
+    text-align: center;
+  }
+  
+  /* Additional styling for the navigation buttons if needed */
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(153, 38, 38, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(-45deg);
+  } 
+
+
+
+
+
+@media(max-width:850px){
+   header .fa-bars{
+    display: block;
+   }
+   .header .navbar{
+    position: fixed;
+    top: 1000rem; left:  0;
+    text-align: center;
+    background:var(--ternary) ;
+    width: 100%;
+   }
+
+   .header .navbar .active{
+    top:7.5rem
+   }
+   
+   .header .navbar a{
+    display: block;
+    margin: 0.3rem 0;
+    padding: 1rem;
+    font-size: 2.6rem;
+    color: var(--dark);
+   }
+   header .navbar a:hover{
+    background-color: #898989;
+   }
+    
+}
+ 
+@import url(https://fonts.google.com/specimen/Fira+Sans?query=fira+sans)
