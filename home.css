@@ -129,8 +129,9 @@ header .fa-bars{
 }
 
 .content img{
-    width: 2700px;
-    height: 400px;
+    width: 3000px;
+    height: 600px;
+    
 }
 
 
@@ -338,7 +339,7 @@ header .fa-bars{
     margin-bottom: 10px;
   }
   
-  /* Center align text within each swiper-slide */
+ 
   .swiper-slide {
     text-align: center;
   }
