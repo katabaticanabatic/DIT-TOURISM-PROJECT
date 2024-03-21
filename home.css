@@ -146,6 +146,7 @@ header .fa-bars{
 .container{
     display: flex;
     flex-direction: row;
+    margin-left: 5%;
    
     
 }
@@ -178,6 +179,13 @@ header .fa-bars{
     margin-left: 60%;
 }
 
+.slid-fade2 img{
+    transition: transform o.3s ease;
+}
+
+.slide-fade2 img:hover{
+    transform: scale(1.1);
+}
 .slid-fades img{
     width: 270px;
     height: 250px;
@@ -185,6 +193,14 @@ header .fa-bars{
     padding-top: 20px;
     position: absolute;
     margin-left: 90%;
+    margin-left: 5px;
+}
+
+
+
+.swiper-slide img{
+    width: 700px;
+    height: 400px;
 }
 
 .heading h2{
@@ -198,7 +214,7 @@ header .fa-bars{
     position: absolute;
     margin-top: 15%;
     margin-left: 5%;
-    color:var(--primary);
+    color:rgb(241, 231, 231);
     font-size: 20px;
     
 
@@ -212,11 +228,14 @@ header .fa-bars{
     font-size: 15px;
     justify-content: space-between;
 
+
 }
+
+
 .text-overlay2{
     position: absolute;
     margin-top: 15%;
-    margin-left:68%;
+    margin-left:70%;
     color:rgb(240, 235, 235);
     font-size: 15px;
     justify-content: space-between;
@@ -234,9 +253,9 @@ header .fa-bars{
 /* programs */
 .logo2 img{
     margin-top: 25%;
-    width: 250px;
+    width: 400px;
     height: 150px;
-    margin-left: 34%;
+    margin-left: 30%;
   
 }
 
@@ -246,6 +265,9 @@ header .fa-bars{
     color: var(--primary);
     text-align: center;
     margin-bottom: 5%;
+    background: #555a54;
+    border-radius: 7px;
+    margin: 30px;
 
 }
 
@@ -254,9 +276,10 @@ header .fa-bars{
     margin-bottom: 2%;
     background: rgb(219, 206, 206);
     border-radius: 5px;
-    width: 40%;
+    width: 70%;
     color:var(--primary);
-    text-align: center;
+    
+    font-weight: 500;
 }
 
 .expedition p{
@@ -264,9 +287,9 @@ header .fa-bars{
     margin-bottom: 2%;
     background: rgb(219, 206, 206);
     border-radius: 5px;
-    width: 40%;
+    width: 70%;
     color:var(--primary);
-    text-align: center;
+    
 }
 
 .birds{
@@ -274,9 +297,9 @@ header .fa-bars{
     margin-bottom: 2%;
     background:rgb(219, 206, 206);
     border-radius: 5px;
-    width: 40%;
+    width: 70%;
     color: var(--primary);
-    text-align: center;
+    
 }
 
 .culture{
@@ -284,9 +307,9 @@ header .fa-bars{
     margin-bottom: 2%;
     background: rgb(219, 206, 206);
     border-radius: 5px;
-    width: 40%;
+    width: 70%;
     color:var(--primary);
-    text-align: center;
+   
 }
 
 
@@ -384,5 +407,121 @@ header .fa-bars{
    }
     
 }
- 
+
+
+.slid-fade2 img {
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: absolute;
+    margin-left: 30%;
+    transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.slid-fade2 img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .slid-fade2 img {
+        width: 200px; /* Adjust width for smaller screens */
+        height: 180px; /* Adjust height for smaller screens */
+        margin-left: 20%; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Media query for even smaller devices */
+@media (max-width: 480px) {
+    .slid-fade2 img {
+        width: 150px; /* Further adjust width for smaller screens */
+        height: 130px; /* Further adjust height for smaller screens */
+        margin-left: 10%; /* Further adjust margin for smaller screens */
+    }
+}
+.slid-fade img,
+.slid-fade2 img,
+.slid-faded img,
+.slid-fades img {
+    width: 270px;
+    height: 250px;
+    border-radius: 10px;
+    padding-top: 20px;
+    position: absolute;
+    transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+/* Scale up the image on hover */
+.slid-fade img:hover,
+.slid-fade2 img:hover,
+.slid-faded img:hover,
+.slid-fades img:hover {
+    transform: scale(1.1);
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    /* Adjust width, height, and margin for smaller screens */
+    .slid-fade img,
+    .slid-fade2 img,
+    .slid-faded img,
+    .slid-fades img {
+        width: 200px;
+        height: 180px;
+        margin-left: 20%;
+    }
+}
+
+/* Media query for even smaller devices */
+@media (max-width: 480px) {
+    /* Further adjust width, height, and margin for smaller screens */
+    .slid-fade img,
+    .slid-fade2 img,
+    .slid-faded img,
+    .slid-fades img {
+        width: 150px;
+        height: 130px;
+        margin-left: 10%;
+    }
+}
+.national-parks-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust column width as needed */
+    gap: 20px; /* Adjust gap between images */
+}
+
+/* Style for each park information container */
+.park-info {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Style for park images */
+.park-info img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+/* Center align text within each park info container */
+.park-info .park-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    color: #fff; /* Text color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners for text box */
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.3s ease; /* Fade-in transition for text */
+}
+
+/* Show text on hover */
+.park-info:hover .park-text {
+    opacity: 1;
+}
 @import url(https://fonts.google.com/specimen/Fira+Sans?query=fira+sans)
